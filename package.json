@@ -7,8 +7,7 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "test": "karma start karma.conf.js",
-    "heroku-prebuild": "npm install -g http-server",
-    "heroku-postbuild": "ng build --prod"
+    "heroku-prebuild": "npm install -g http-server"
   },
   "keywords": [],
   "author": "",
