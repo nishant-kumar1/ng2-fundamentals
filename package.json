@@ -4,10 +4,8 @@
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run server\" ",
     "server": "node node_modules/ng2f-server/server.js",
-    "build": "npm run tsc",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "pretest": "npm run build",
     "test": "karma start karma.conf.js"
   },
   "keywords": [],
