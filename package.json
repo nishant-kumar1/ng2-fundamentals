@@ -2,11 +2,13 @@
   "name": "ng2-fundamentals-demo",
   "version": "1.0.0",
   "scripts": {
-    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run server\" ",
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run server\" \"http-server dist\"",
     "server": "node node_modules/ng2f-server/server.js",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "test": "karma start karma.conf.js"
+    "test": "karma start karma.conf.js",
+    "heroku-prebuild": "npm install -g http-server",
+    "heroku-postbuild": "ng build --prod"
   },
   "keywords": [],
   "author": "",
