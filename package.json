@@ -2,8 +2,8 @@
   "name": "ng2-fundamentals-demo",
   "version": "1.0.0",
   "scripts": {
-    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run server\" \"node server.js\"",
-    "server": "node node_modules/ng2f-server/server.js",
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run server\" \"node Server.js\"",
+    "server": "node Server.js",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "test": "karma start karma.conf.js",
@@ -18,10 +18,6 @@
       "url": "https://github.com/angular/angular.io/blob/master/LICENSE"
     }
   ],
-  "engines": {
-    "node": "6.9.2",
-    "npm": "3.10.9"
-  },
   "dependencies": {
     "@angular/common": "~2.2.0",
     "@angular/compiler": "~2.2.0",
