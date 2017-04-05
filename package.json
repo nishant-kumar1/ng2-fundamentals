@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run server\" \"node Server.js\"",
-    "server": "node Server.js",
+    "server": "node node_modules/ng2f-server/server.js",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "test": "karma start karma.conf.js",
-    "heroku-prebuild": "npm install -g http-server",
-    "postinstall": "ng build --aot -prod"
+    "heroku-prebuild": "npm install -g http-server"
   },
   "keywords": [],
   "author": "",
