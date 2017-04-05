@@ -7,8 +7,7 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "test": "karma start karma.conf.js",
-    "preinstall":   "npm install -g http-server",
-    "postinstall":  "ng build --prod"
+    "preinstall":   "npm install -g http-server"
   },
   "keywords": [],
   "author": "",
