@@ -1,20 +1,22 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+
 const app = express();
 
-app.set('port', (process.env.PORT || 5000));
-// Run the app by serving the static files
-// in the dist directory
-app.use(express.static(__dirname + '/dist'));
+const http = require('http').createServer(app);
+const port = process.env.PORT || 3030;
 
-// views is directory for all template files
-app.set('views', __dirname + '/dist');
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
+app.use(express.static(__dirname + '/../dist'));
 
-app.get('/', function(request, response) {
-  response.render('index');
+
+//get all students on waitlist - test
+app.get('/waitlist', (req, res) => {
+    res.status(200).send('waitlist route working');
 });
 
-// Start the app by listening on the default
-// Heroku port
-app.listen(app.get('port'), function() {
-  console.log('Angular app is running on port', app.get('port'));
+
+http.listen(port, () => {
+    console.log(`started on port ${port}`);
 });
