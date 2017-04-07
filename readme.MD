@@ -6,6 +6,7 @@ This is the getting started package for the Pluralsight course on Angular 2 Fund
 
 The course is currently up-to-date.
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 Getting Started
 ---------------
