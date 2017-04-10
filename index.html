@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Angular2Demo</title>
+    <title>Digital Clinical Home page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -17,6 +17,16 @@
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/bootstrap.min.js"></script>
+    <!--Custum CSS files-->
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+
     <script src="systemjs.config.js"></script>
     <script>
       System.import('app').catch(function(err){console.error(err);});
@@ -24,6 +34,6 @@
   </head>
   
   <body class="container">    
-    <events-app>Loading...</events-app>
+    <master-app>Loading...</master-app>
   </body>
 </html>

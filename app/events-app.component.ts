@@ -1,10 +1,9 @@
 import {Component} from '@angular/core';
 
 @Component({
-selector : 'events-app',
+selector : 'master-app',
 template : `
-<nav-bar></nav-bar>
-<events-list></events-list>
+<home-component></home-component>
 `
 })
 

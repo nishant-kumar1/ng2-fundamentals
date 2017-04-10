@@ -13,8 +13,8 @@ var eventsAppComponent = (function () {
 }());
 eventsAppComponent = __decorate([
     core_1.Component({
-        selector: 'events-app',
-        template: "\n<nav-bar></nav-bar>\n<events-list></events-list>\n"
+        selector: 'master-app',
+        template: "\n<home-component></home-component>\n"
     })
 ], eventsAppComponent);
 exports.eventsAppComponent = eventsAppComponent;
