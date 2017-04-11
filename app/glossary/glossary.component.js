@@ -13,8 +13,9 @@ var GlossaryComponent = (function () {
 }());
 GlossaryComponent = __decorate([
     core_1.Component({
-        selector: "glossary",
-        templateUrl: "/app/glossary/glossary.component.html"
+        selector: "glossary-component",
+        moduleId: module.id,
+        templateUrl: "glossary.component.html"
     })
 ], GlossaryComponent);
 exports.GlossaryComponent = GlossaryComponent;

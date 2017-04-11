@@ -1,8 +1,9 @@
-import {Component} from '@angular/core'
+import { Component } from '@angular/core'
 
-@Component ({
-    selector: "glossary",
-    templateUrl : "/app/glossary/glossary.component.html"
+@Component({
+    selector: "glossary-component",
+    moduleId: module.id,
+    templateUrl: "glossary.component.html"
 })
 
 export class GlossaryComponent {

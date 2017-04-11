@@ -13,8 +13,9 @@ var CompetitiveAnalysisComponent = (function () {
 }());
 CompetitiveAnalysisComponent = __decorate([
     core_1.Component({
-        selector: "competitive-analysis",
-        templateUrl: "/app/competitiveAnalysis/competitiveAnalysis.component.html"
+        selector: "competitive-analysis-component",
+        moduleId: module.id,
+        templateUrl: "competitiveAnalysis.component.html"
     })
 ], CompetitiveAnalysisComponent);
 exports.CompetitiveAnalysisComponent = CompetitiveAnalysisComponent;
