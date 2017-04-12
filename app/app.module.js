@@ -14,6 +14,7 @@ var glossary_component_1 = require("./glossary/glossary.component");
 var home_component_1 = require("./home/home.component");
 var links_component_1 = require("./links/links.component");
 var appRoutes = [
+    { path: '', component: home_component_1.HomeComponent },
     { path: "Home", component: home_component_1.HomeComponent },
     { path: "CompetitiveAnalysis", component: competitiveAnalysis_component_1.CompetitiveAnalysisComponent },
     { path: "Glossary", component: glossary_component_1.GlossaryComponent },
